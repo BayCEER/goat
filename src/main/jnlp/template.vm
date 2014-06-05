@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="$encoding"?>
+<jnlp
+    spec="$jnlpspec"
+    codebase="${codebase}/$project.ArtifactId"
+    href="$outputFile">
+ <information>
+   <title>$jnlp_title</title>
+   <vendor>$project.Organization.Name</vendor>
+   <description>$project.Description</description>
+   <icon href="images/Goat400.gif"/>
+   <icon kind="splash" href="images/Goat32.gif"/>
+   <shortcut>
+   	<desktop/>
+   </shortcut>
+  </information>
+  <security>
+     <all-permissions/>
+  </security>
+  <resources>
+    <j2se version="1.7+"/>
+     $dependencies     
+  </resources>
+  <application-desc main-class="$mainClass">    
+  </application-desc>
+</jnlp>
